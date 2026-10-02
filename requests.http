@@ -1,0 +1,220 @@
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "dataSaida": "05/10/2026",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": "2022",
+    "cor": "Prata"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "02/10/2026",
+  "dataSaida": "06/10/2026",
+  "mecanico": {
+    "nome": "Asdrubal Santos",
+    "anosExperiencia": 5
+  },
+  "veiculo": {
+    "marca": "Honda",
+    "modelo": "Civic",
+    "ano": "2020"
+  }
+}
+
+
+###
+GET http://localhost:8080/consertos?page=0&size=10
+
+
+###
+GET http://localhost:8080/consertos/algunsdados
+
+
+###
+GET http://localhost:8080/consertos/1
+
+
+###
+GET http://localhost:8080/consertos/9999
+
+
+###
+PUT http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "dataSaida": "10/10/2026"
+}
+
+
+###
+PUT http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nomeMecanico": "Asdrubal Oliveira"
+}
+
+
+###
+PUT http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "anosExperienciaMecanico": 15
+}
+
+
+###
+PUT http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "dataSaida": "12/10/2026",
+  "nomeMecanico": "Asdrubal Carvalho",
+  "anosExperienciaMecanico": 20
+}
+
+
+###
+PUT http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "id": 9999,
+  "dataSaida": "12/10/2026"
+}
+
+
+###
+DELETE http://localhost:8080/consertos/1
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "dataSaida": "05/10/2026",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "",
+    "modelo": "Corolla",
+    "ano": "2022",
+    "cor": "Prata"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "",
+    "ano": "2022"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": "22"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "mecanico": {
+    "nome": "",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": "2022"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "2026-10-01",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": "2022"
+  }
+}
+
+
+###
+POST http://localhost:8080/consertos
+Content-Type: application/json
+
+{
+  "dataEntrada": "01/10/2026",
+  "dataSaida": "2026-10-05",
+  "mecanico": {
+    "nome": "Asdrubal Silva",
+    "anosExperiencia": 10
+  },
+  "veiculo": {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": "2022"
+  }
+}
